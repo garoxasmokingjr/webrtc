@@ -9,18 +9,6 @@
   </head>
 
   <body>
-    <p>Click on the Menu Icon to transform it to "X":</p>
-<div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-  
-  <!-- Menu content -->
-  <div class="menu-content">
-    <a href="#" class="menu-option">Edit</a>
-    <a href="#" class="menu-option">Delete</a>
-  </div>
-</div>
     <h1></h1>
 
     <label for="roomId">Room ID</label>
@@ -36,17 +24,6 @@
 
     <div id="videos">
       <div id="videoGrid" class="grid-container"></div>
-    </div>
-
-    <div class="grid-item">
-      <video autoplay playsinline muted></video>
-      <div class="options-btn">
-        <button class="options-btn">...</button>
-        <div class="options-content">
-          <button class="kick-btn">Kick</button>
-        </div>
-      </div>
-      <p>User Name</p>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>

@@ -62,6 +62,17 @@ joinBtn.addEventListener('click', () => {
     webrtc.joinRoom(room);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const optionsBtns = document.querySelectorAll('.options-bntn');
+
+    optionsBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const optionsContent = this.nextElementSibling;
+            optionsContent.classList.toggle('show');
+        });
+    });
+});
+
 const setTitle = (status, e) => {
     const room = e.detail.roomId;
 
@@ -173,3 +184,10 @@ webrtc.addEventListener('notification', (e) => {
 
     notify(notif);
 });
+
+/**
+ * Handle menu icon
+ */
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
